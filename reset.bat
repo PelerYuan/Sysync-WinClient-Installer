@@ -1,3 +1,4 @@
+@echo off
 cd "%~dp0"
 rd /s /q "%~dp0\generate_file"
 mkdir "%~dp0\generate_file"

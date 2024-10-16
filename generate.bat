@@ -17,4 +17,8 @@ pyinstaller -F "%~dp0generate_file\SysyncWinClient.py"
 copy "%~dp0generate_file\dist\SysyncWinClient.exe" "%~dp0generate_file"
 echo COMPILE done!
 
+cd "%~dp0.."
+"%~dp0res\Inno\ISCC.exe" "%~dp0installer.iss"
+echo GENERATE done!
+
 pause
